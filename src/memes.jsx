@@ -24,7 +24,7 @@ function MemeGenerator() {
   
         const [happy, angry, sad, cool, mindBlown, sleepy] = tables.map(t => t.data || []);
   
-        const getRand = (arr) => arr[Math.floor(Math.random() * arr.length)] || { top_text: "load", bottom_text: "error" };
+        const getRand = (arr) => arr[Math.floor(Math.random() * arr.length)] || { top_text: "Sam", bottom_text: "Adams" };
   
         setFeelingsMap({
           '😄': getRand(happy),
