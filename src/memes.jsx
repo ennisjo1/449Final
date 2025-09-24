@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
-const supabaseUrl = 'https://ssrooxlflakfldbsgjcn.supabase.co';
-const supabaseKey = 'YeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzcm9veGxmbGFrZmxkYnNnamNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ2NDg3MzUsImV4cCI6MjA2MDIyNDczNX0.53bFYWiNJvoCreZ5JOr34ZKBRLjFWA5FSfD3xIJqzhI';
+const supabaseUrl = 'https://jotmngsbkxunpkkozrsr.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpvdG1uZ3Nia3h1bnBra296cnNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg2NzIzNTYsImV4cCI6MjA3NDI0ODM1Nn0.d2fK5xrV13Td91kJJ31uwnYCy7dzy72I6IGs2FKf6PQ';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 function MemeGenerator() {
@@ -24,7 +24,7 @@ function MemeGenerator() {
   
         const [happy, angry, sad, cool, mindBlown, sleepy] = tables.map(t => t.data || []);
   
-        const getRand = (arr) => arr[Math.floor(Math.random() * arr.length)] || { top_text: "Sam Adams Society", bottom_text: "FCC Come after me" };
+        const getRand = (arr) => arr[Math.floor(Math.random() * arr.length)] || { top_text: "Practice Free Speech", bottom_text: "Tell me your credit card information" };
   
         setFeelingsMap({
           '😄': getRand(happy),
